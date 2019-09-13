@@ -1,0 +1,202 @@
+body {
+  background:#fff;
+  margin: 0px;
+  padding: 0px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  font-family: "Reenie Beanie";
+}
+#root {
+  display: inline-flex;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+/* #root .group_style {
+  margin-left: 50px;
+  background: #ccf;
+  padding: 10px;
+  border-radius: 10px;
+  width: 400px;
+  border: 1px solid #aaa;
+} */
+
+#root .vertical1 {
+  overflow-y: auto;
+  height: 46vh;
+}
+
+#root .cardOuter .vertical {
+  overflow-y: auto;
+  height: 85vh;
+}
+#root .cardOuter .heading {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+#root .cardOuter #search-box {
+  padding: 5px;
+  position: relative;
+}
+#root .cardOuter #search-box .fa {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+#root .cardOuter #search-box #search {
+  width: 100%;
+  margin: auto;
+  height: 40px;
+  padding-left: 30px;
+}
+
+#root input[type="text"] {
+  width: 95%;
+  border: 2px solid #05a5f0;
+  background-color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 22px;
+  margin: 10px 5px;
+  box-sizing: border-box;
+}
+
+#root button {
+  background-color: #05a5f0;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 10px 30px;
+  cursor: pointer;  
+}
+
+#root input[type="date"] {
+  width: 70%;
+  border: 2px solid #05a5f0;
+  background-color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 22px;
+  margin: 10px 5px;
+  box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400');
+#root .bg,
+#root .button1 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+#root .container1 {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#root .bg {
+  animation: pulse 1.2s ease infinite;
+  background: #03a1fc;
+}
+
+#root .button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 99;
+  border: none;
+  background: #03a1fc;
+  background-size: 18px;
+  cursor: pointer;
+  outline: none;
+}
+
+#root .button1 .icon {
+  position: absolute;
+  color: #FFF;
+  font-size: 17px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+
+
+#root .cardOuter {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  /* width: 40%; */
+  width: 400px;
+  /* margin: 0px 10px 0px 10px; */
+  padding: 10px;
+  margin-left: 50px;
+  background: #dadeec;
+  /* background: #d6d6d6; */
+  border: 2px solid #dadeec;
+  /* background: #FFF; */
+}
+
+#root .cardOuter:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#root .container {
+  padding: 2px 16px;
+}
+
+
+.ahashake {
+  -webkit-animation: kf_shake 0.4s 1 linear;
+  -moz-animation: kf_shake 0.4s 1 linear;
+  -o-animation: kf_shake 0.4s 1 linear;
+  background-color: indianred;
+}
+
+@keyframes kf_shake {
+  0% { -webkit-transform: translate(30px); }
+  20% { -webkit-transform: translate(-30px); }
+  40% { -webkit-transform: translate(15px); }
+  60% { -webkit-transform: translate(-15px); }
+  80% { -webkit-transform: translate(8px); }
+  100% { -webkit-transform: translate(0px); }
+}
+
+@-webkit-keyframes kf_shake {
+  0% { -webkit-transform: translate(30px); }
+  20% { -webkit-transform: translate(-30px); }
+  40% { -webkit-transform: translate(15px); }
+  60% { -webkit-transform: translate(-15px); }
+  80% { -webkit-transform: translate(8px); }
+  100% { -webkit-transform: translate(0px); }
+}
+@-moz-keyframes kf_shake {
+  0% { -moz-transform: translate(30px); }
+  20% { -moz-transform: translate(-30px); }
+  40% { -moz-transform: translate(15px); }
+  60% { -moz-transform: translate(-15px); }
+  80% { -moz-transform: translate(8px); }
+  100% { -moz-transform: translate(0px); }
+}
+@-o-keyframes kf_shake {
+  0% { -o-transform: translate(30px); }
+  20% { -o-transform: translate(-30px); }
+  40% { -o-transform: translate(15px); }
+  60% { -o-transform: translate(-15px); }
+  80% { -o-transform: translate(8px); }
+  100% { -o-origin-transform: translate(0px); }
+}
